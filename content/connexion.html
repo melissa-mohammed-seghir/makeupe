@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Shop - Connexion</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style/connexion.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="../javascript/connexion.js" defer></script>
+</head>
+  
+<body>
+
+
+<header class="auth-header">
+
+  <div class="logo">
+    DivaMakeup<span>.</span>
+  </div>
+
+  <!-- BURGER -->
+  <div id="menu-btn">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <!-- NAV -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="../index.html">Accueil</a></li>
+    <li><a href="produits.html">Produits</a></li>
+    <li><a href="inscription.html">Inscription</a></li>
+    <li><a href="commande.html">Commande</a></li>
+  </ul>
+
+  <a href="commande.html" class="btn-auth">
+    Commander
+  </a>
+
+</header>
+
+<div class="login-container">
+
+  <div class="login-card">
+
+    <div class="logo-card">
+      DivaMakeup.
+    </div>
+
+    <p class="subtitle">Accédez à votre compte client</p>
+
+    <form onsubmit="login(event)">
+       <div class="input-group">
+         <i class="fa-solid fa-user"></i>
+         <input type="text" id="nom" required>
+         <label>Nom ou Email</label>
+       </div>
+
+     <div class="input-group">
+         <i class="fa-solid fa-lock"></i>
+         <input type="password" id="pass" required>
+         <label>Mot de passe</label>
+      </div>
+
+      <div class="row">
+        <label class="checkbox">
+          <input type="checkbox"> Se souvenir de moi
+        </label>
+
+        <a href="#">Mot de passe oublié ?</a>
+      </div>
+
+      <button type="submit">Se connecter</button>
+
+      <p class="register">
+        Nouveau client ?
+        <a href="../content/inscription.html">Créer un compte</a>
+      </p>
+    </form>
+ </div>
+</div>
+
+ </body>
+</html>

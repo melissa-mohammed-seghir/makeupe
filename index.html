@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivaMakeup</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style/index.css">
+    <script src="javascript/index.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <p>DivaMakeup<span>.</span></p>
+  </div>
+
+  <!-- Bouton menu mobile -->
+  <div id="menu-btn">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="content/produits.html">Produits</a></li>
+    <li><a href="content/connexion.html">Connexion</a></li>
+    <li><a href="content/inscription.html">Inscription</a></li>
+    <li><a href="content/commande.html">Commande</a></li>
+  </ul>
+
+  <a href="content/commande.html" class="btn">
+    <i   class="fa-solid fa-cart-shopping"></i> Commander
+  </a>
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+
+
+        <h1>Révélez votre beauté naturelle</h1>
+       <h2>Découvrez nos collections de maquillage premium</h2>
+
+        <div class="buttons">
+            <a href="content/produits.html" class="btn-secondary">Découvrir</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="popular-products">
+
+    <h2> Produits Populaires</h2>
+
+    <div class="products-grid" id="home-products"></div>
+
+    </div>
+
+    <a href="content/produits.html" class="catalog-btn">
+        Voir tous les produits
+    </a>
+
+</section>
+
+<section class="services">
+
+  <h2 class="services-title">Nos Services</h2>
+  <p class="services-subtitle">Une expérience beauté simple, rapide et sécurisée</p>
+
+  <div class="services-container">
+
+    <div class="service-box">
+      <i class="fa-solid fa-truck-fast"></i>
+      <h3>Livraison Rapide</h3>
+      <p>Livraison partout en Algérie.</p>
+    </div>
+
+    <div class="service-box">
+      <i class="fa-solid fa-gem"></i>
+      <h3>Qualité Premium</h3>
+      <p>Produits sélectionnés avec soin.</p>
+    </div>
+
+    <div class="service-box">
+      <i class="fa-solid fa-credit-card"></i>
+      <h3>Paiement Sécurisé</h3>
+      <p>Commandez en toute confiance.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="reviews">
+
+    <h2> Avis de nos clientes</h2>
+    <p class="subtitle">Ce que nos clientes pensent de DivaMakeup</p>
+
+    <div class="reviews-container">
+
+        <!-- AVIS 1 -->
+        <div class="review-card">
+
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+
+            <h3>Sarah M.</h3>
+            <p>"Les produits sont magnifiques livraison rapide et qualité top."</p>
+        </div>
+
+        <!-- AVIS 2 -->
+        <div class="review-card">
+
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <h3>Nadia K.</h3>
+            <p>"Très bonne qualité, le rouge à lèvres tient toute la journée ."</p>
+        </div>
+
+        <!-- AVIS 3 -->
+        <div class="review-card">
+
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <h3>Yasmine B.</h3>
+            <p>"Service client au top et produits premium, je recommande !"</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+    <p>© 2026 DivaMakeup - Tous droits réservés.</p>
+</footer>
+  
+<!-- MODAL PRODUIT -->
+<div id="productModal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close">&times;</span>
+
+    <img id="modalImg" src="" alt="">
+
+    <h2 id="modalTitle"></h2>
+
+    <p id="modalPrice"></p>
+
+    <p id="modalDesc">
+      Produit de haute qualité sélectionné pour sublimer votre beauté 
+    </p>
+
+  </div>
+
+</div>
+</body>
+</html>

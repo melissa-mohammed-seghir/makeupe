@@ -1,0 +1,281 @@
+/* =========================
+   BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+    background: radial-gradient(circle at top, #f4f996, #f39cc4, rgb(249, 212, 164));
+  padding-top: 80px;
+  color: #222;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 8%;
+        background: radial-gradient(circle at top, #f4f996, #f39cc4, rgb(249, 212, 164));
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+  color: #222;
+}
+
+.logo span {
+  color: thistle;
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: thistle;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: thistle;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   BTN
+========================= */
+.btn-auth {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, #d8bfd8, #c8a2c8);
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-auth:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   BURGER
+========================= */
+#menu-btn {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #222;
+}
+
+/* =========================
+   LOGIN CARD
+========================= */
+.login-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-card {
+  width: 360px;
+  padding: 35px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  color: white;
+}
+
+.logo-card {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 14px 14px 40px;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: transparent;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+}
+
+.input-group i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255,255,255,0.7);
+}
+
+.input-group label {
+  position: absolute;
+  left: 40px;
+  top: 14px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -10px;
+  font-size: 11px;
+  color: #fff;
+}
+
+/* focus */
+.input-group input:focus {
+  border-color: thistle;
+  box-shadow: 0 0 10px rgba(216, 191, 216, 0.5);
+}
+
+/* =========================
+   ROW
+========================= */
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.row a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgb(70, 50, 67), thistle);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   REGISTER
+========================= */
+.register {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.register a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  #menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+
+    flex-direction: column;
+    gap: 15px;
+
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(15px);
+
+    padding: 15px;
+    border-radius: 12px;
+
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .btn-auth {
+    display: none;
+  }
+}

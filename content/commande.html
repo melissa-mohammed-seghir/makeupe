@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Commander</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style/commande.css">
+  <script src="../javascript/commande.js " defer></script>
+</head>
+
+<body>
+  <header class="top-bar">
+
+  <a href="../index.html" class="logo">
+    DivaMakeup<span>.</span>
+  </a>
+
+  <nav>
+    <a href="../index.html">Accueil</a>
+    <a href="produits.html">Produits</a>
+  </nav>
+
+</header>
+
+<section class="checkout">
+  <h2 class="title">Finaliser la commande</h2>
+
+
+  <div class="order-box">
+    <h3>Votre panier</h3>
+    <div id="order-list"></div>
+
+    <h3>Total : <span id="order-total">0</span> $</h3>
+  </div>
+
+  <!-- FORM -->
+  <div class="form-box">
+
+    <h3>Informations client</h3>
+
+    <form id="checkout-form">
+
+      <input type="text" placeholder="Nom complet" required>
+      <input type="text" placeholder="Adresse" required>
+      <input type="tel" placeholder="Téléphone" required>
+
+      <select required>
+        <option value="">Méthode de paiement</option>
+        <option>Cash à la livraison</option>
+        <option>Carte bancaire</option>
+      </select>
+
+      <button type="submit">Commander </button>
+
+    </form>
+
+  </div>
+
+</section>
+</body>
+</html>
